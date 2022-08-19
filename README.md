@@ -1,9 +1,11 @@
+<p align="center"><img align="center" style="width: 60%" src="https://user-images.githubusercontent.com/71836991/172395719-d46d87ef-75b4-46ac-8079-38165d16be3d.png"></p>
+
 <h2 style="font-size:2.5rem;" align="center"><a href="https://github.com/simply-develop/chatbot">Chatbot</a></h2>
 
 <h3 align="center">A Friendly human-like chatbot to be with you, forever</h3>
 
 <h2 align="center">Made by <a href="https://discord.gg/3JzDV9T5Fn">Rahuletto#0243</a></h2>
-<p align="center">This template powers our system at [`Simply API`](https://simplyapi.js.org)</p>
+<p align="center">This template powers our system at <a href="https://simplyapi.js.org">Simply API</a></p>
 
 
 
@@ -99,7 +101,8 @@ Its via using `pipelines.md` !
 
 **Template**
 
-- First, you need to train the input-type relation in `corpus.json`
+### First,
+you need to train the input-type relation in `corpus.json`
 
 ```json
 {
@@ -113,12 +116,13 @@ Its via using `pipelines.md` !
   ]
 }
 ```
-### where
+where
 - the `doubt.qna` is the type of input
 - the `utterances` are the inputs to define its type
 
 
-- Second, you need to dynamically respond via `pipelines.md`
+### Second,
+you need to dynamically respond via `pipelines.md`
 
 ```md
 # onIntent(doubt.qna)
@@ -126,6 +130,6 @@ Its via using `pipelines.md` !
 
 { The JS code }
 ```
-### where
+where
 - the `doubt.qna` is the type of input
 - the `{ The JS code }` is your Javascript code for dynamic response
