@@ -1,0 +1,29 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "A Open source chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rahuletto",
+  "license": "CC BY 4.0",
+  "dependencies": {
+    "@nlpjs/basic": "^4.23.5",
+    "@nlpjs/core": "^4.23.4",
+    "@nlpjs/directline-connector": "^4.23.4",
+    "@nlpjs/emoji": "^4.23.4",
+    "@nlpjs/lang-en": "^4.23.4",
+    "@nlpjs/nlu": "^4.23.5",
+    "node-nlp": "^4.24.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "^2.0.18"
+  }
+}

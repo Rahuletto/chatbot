@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "nlp": {
+      "corpora": ["./corpus.json"]
+    },
+    "api-server": {
+      "port": 6969,
+      "serveBot": true      
+    }
+  },
+  "use": ["Basic", "LangEn"]
+}
