@@ -1,4 +1,4 @@
-<p align="center"><img align="center" style="width: 60%" src="https://user-images.githubusercontent.com/71836991/172395719-d46d87ef-75b4-46ac-8079-38165d16be3d.png"></p>
+<p align="center"><img align="center" style="width: 60%" src="https://user-images.githubusercontent.com/71836991/185550469-3b5117a9-a206-40b0-8744-b4d5cfaf92ac.png"></p>
 
 <h2 style="font-size:2.5rem;" align="center"><a href="https://github.com/simply-develop/chatbot">Chatbot</a></h2>
 
