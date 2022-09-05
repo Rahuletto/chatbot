@@ -1,8 +1,8 @@
 {
   "name": "chatbot",
-  "version": "1.0.0",
+  "version": "1.0.0-ts",
   "description": "A Open source chatbot",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +24,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.4",
     "eslint-plugin-promise": "^6.0.0",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "@types/node": "^17.0.12"
   }
 }

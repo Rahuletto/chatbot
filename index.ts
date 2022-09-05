@@ -1,7 +1,7 @@
-const { removeEmojis } = require("@nlpjs/emoji");
+import { removeEmojis } from "@nlpjs/emoji";
 
-const { dockStart } = require("@nlpjs/basic");
-const { Normalizer } = require("@nlpjs/core");
+import { dockStart } from "@nlpjs/basic";
+import { Normalizer } from "@nlpjs/core";
 
 const normalizer = new Normalizer();
 
@@ -19,19 +19,22 @@ async function train(nlp) {
   return nlp;
 }
 
-async function compute(nlp, msg, options = {}) {
-  let name = process.env.name || "Simply-Chatbot",
-    bplace = process.env.birthplace || "Discord",
-    age = process.env.age || "1",
-    dev = process.env.developer || "Rahuletto",
-    bday = process.envs.bday || "31 February 2021",
-    gender = process.env.gender || "Male",
-    year = process.env.year || "2021";
+async function compute(nlp, msg, options = {}): string {
+  let name: string = process.env.name || "Simply-Chatbot",
+    bplace: string = process.env.birthplace || "Discord",
+    age: string | number = process.env.age || "1",
+    dev: string = process.env.developer || "Rahuletto",
+    bday: string = process.envs.bday || "31 February 2021",
+    gender: string = process.env.gender || "Male",
+    year: string = process.env.year || "2021";
 
+  // normalizes the message (removes unwanted unicodes)
   msg = normalizer.normalize(msg);
 
-  reply = await nlp.process(removeEmojis(msg));
+  let reply = await nlp.process(removeEmojis(msg));
 
+  // replaces string to customize the model easily
+  // remove this for loop if you think its useless for you
   reply.answers.forEach(async (anz) => {
     anz.answer =
       anz.answer.charAt(0).toUpperCase() +
@@ -82,7 +85,10 @@ async function compute(nlp, msg, options = {}) {
 }
 
 // The input given to the bot
-let input = "Hello !";
+let input: string = "Hello !";
+
+// trains the nlp with corpus.json (Data)
 train(manager).then(async (nlp) => {
+  // computes the message for a response
   compute(nlp, input);
 });
