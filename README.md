@@ -13,9 +13,11 @@
 
 # Instructions
 
-(This is a much complex system to work with !)
 
-[This branch is for typescript. Go to [javascript branch](https://github.com/Rahuletto/chatbot)]
+#### This branch is for typescript. Go to [main branch](https://github.com/Rahuletto/chatbot/tree/main) if you need the typescript project
+
+
+(This is a much complex system to work with !)
 
 - Provide your chatbot's details in the `.env.example` file
 - Change the input as you like in `index.js`
