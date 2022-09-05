@@ -14,7 +14,7 @@
 # Instructions
 
 
-#### This branch is for javascript. Go to [typescript branch](https://github.com/Rahuletto/chatbot/tree/typescript) if you need the typescript project
+#### This branch is for typescript. Go to [typescript branch](https://github.com/Rahuletto/chatbot/tree/typescript) if you need the typescript project
 
 
 (This is a much complex system to work with !)
